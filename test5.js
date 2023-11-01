@@ -93,9 +93,9 @@ csvArray.forEach(obj => {
 	var conLI = document.createElement("li");
 	conLI.innerHTML= obj.NUMBER;
 	conOL.appendChild(conLI);
-	
+	Product.appendChild(conOL);
 });
 
-Product.appendChild(conOL);
+
 
 
