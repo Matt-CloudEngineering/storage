@@ -72,7 +72,7 @@ function fetchDataForObject(obj) {
 
 	    }
 
-	    return response;
+	    return xhr.response;
 	});
  
 
