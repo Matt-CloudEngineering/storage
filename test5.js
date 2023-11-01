@@ -96,6 +96,6 @@ csvArray.forEach(obj => {
 	
 });
 
-Podcut.appendChild(conOL);
+Product.appendChild(conOL);
 
 
