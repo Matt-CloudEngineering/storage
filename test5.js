@@ -91,7 +91,7 @@ conOL = document.createElement('ol');
 csvArray.forEach(obj => {
 	//console.log(obj.NUMBER);
 	var conLI = document.createElement("li");
-	conLI.innerHTML(obj.NUMBER);
+	conLI.innerHTML= obj.NUMBER;
 	conOL.appendChild(conLI);
 	
 });
