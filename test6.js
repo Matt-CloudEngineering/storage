@@ -59,20 +59,18 @@ function fetchDataForObject(obj) {
 	    url: workingUrl,
 	    data: "productNumber=" + obj.NUMBER + "&countryCode=en-us",
 	    dataType: "jsonp",
-	    jsonpCallback: "CallbackFunction",
+	    jsonpCallback: "",
 	    error: function (xhr) {
 		// Handle errors here
 		    if (xhr.error!='') {
 			    console.log("Error: "+ xhr.status);
 		    }
 	    },
-	    /*
 	    success: function (data) {
 		// Handle the successful response here
-		console.log(data);
-		console.log("Success: " + obj.NUMBER);
+ 			return data;
+
 	    }
-	    */
 	});
  
 
@@ -91,7 +89,8 @@ conOL = document.createElement('ol');
 csvArray.forEach(obj => {
 	//console.log(obj.NUMBER);
 	var conLI = document.createElement("li");
-	conLI.innerHTML= obj.NUMBER;
+	data = fetchDataForObject(obj);
+	conLI.innerHTML= data.data.product.name + ":" + ojb.NUMBER;
 	conOL.appendChild(conLI);
 	Product.appendChild(conOL);
 });
