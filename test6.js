@@ -1,4 +1,4 @@
-// Fixed CSV data as a string with line breaks
+add// Fixed CSV data as a string with line breaks
 const csvData = `
 MPI,NAME,NUMBER
 43,AURA Interior Paint- Satin,N526
@@ -90,7 +90,7 @@ csvArray.forEach(obj => {
 	//console.log(obj.NUMBER);
 	var conLI = document.createElement("li");
 	data = fetchDataForObject(obj);
-	conLI.innerHTML= data.data.product.name + ":" + ojb.NUMBER;
+	conLI.innerHTML= data.product.name + ":" + ojb.NUMBER;
 	conOL.appendChild(conLI);
 	Product.appendChild(conOL);
 });
