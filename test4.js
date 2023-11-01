@@ -1,4 +1,4 @@
-// Fixed CSV data as a string with line breaks
+// Fixed CSV data as a string with line breaks added to the comment
 const csvData = `
 MPI,NAME,NUMBER
 43,AURA Interior Paint- Satin,N526
