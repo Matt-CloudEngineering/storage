@@ -71,6 +71,8 @@ function fetchDataForObject(obj) {
  			return data;
 
 	    }
+
+	    reurn response;
 	});
  
 
