@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+  $.ajax({
+    url: "https://stage-api.benjaminmoore.com/api/88238a6f1629408b2cff/color/GetPaletteByCode",
+    data: {
+      code: "AF",
+      colorData: "true",
+      countryCode: "en-us"
+    },
+    dataType: "jsonp", // Notice we're not setting 'jsonpCallback' here anymore
+    success: function(data) {
+        console.log("Success!", data);
+	console.log(data.data.colorList.length);
+      //CallbackFunction(
+      // ... rest of your success logic
+    },
+    error: function(xhr, status, error) {
+      console.error("An error occurred: " + status, error);
+      // ... rest of your error handling logic
+    }
+  });
+});
+
+
+</script>
+</head>
+<body>
+<!-- Your content here. -->
+</body>
+</html>
