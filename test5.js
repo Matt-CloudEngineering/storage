@@ -84,12 +84,19 @@ function CallbackFunction(success) {
 
 const csvArray = parseCSV(csvData);
 
+const Product = document.getElementById('product');
+const conOL = document.createElement('ol');
+const conLI;
+
 // Iterate through the CSV array and make AJAX requests for each object
 csvArray.forEach(obj => {
 	//console.log(obj.NUMBER);
+	conLI = document.createElement("li");
+	conLI.innerHTML(obj.NUMBER);
+	conOL.appendChild(conLI);
 	
-
-	setInterval(fetchDataForObject(obj), 80000);
 });
+
+Podcut.appendChild(conOL);
 
 
