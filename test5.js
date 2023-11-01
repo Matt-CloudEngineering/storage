@@ -86,7 +86,6 @@ const csvArray = parseCSV(csvData);
 
 const Product = document.getElementById('product');
 const conOL = document.createElement('ol');
-const conLI = '';
 
 // Iterate through the CSV array and make AJAX requests for each object
 csvArray.forEach(obj => {
