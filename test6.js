@@ -72,7 +72,7 @@ function fetchDataForObject(obj) {
 
 	    }
 
-	    reurn response;
+	    return response;
 	});
  
 
