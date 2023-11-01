@@ -34,7 +34,6 @@ function parseCSV(csvText) {
     const rows = csvText.trim().split('\n');
     const headers = rows[0].split(',');
     const data = [];
-    const fSelect = document.getElementById("prod");
 
 
     for (let i = 1; i < rows.length; i++) {
@@ -96,6 +95,6 @@ csvArray.forEach(obj => {
 	Product.appendChild(conOL);
 });
 
-
+console.log($mini_cart);
 
 
