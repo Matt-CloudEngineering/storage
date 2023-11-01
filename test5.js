@@ -85,7 +85,7 @@ function CallbackFunction(success) {
 const csvArray = parseCSV(csvData);
 
 const Product = document.getElementById('product');
-const conOL = document.createElement('ol');
+conOL = document.createElement('ol');
 
 // Iterate through the CSV array and make AJAX requests for each object
 csvArray.forEach(obj => {
