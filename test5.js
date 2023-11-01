@@ -90,7 +90,7 @@ conOL = document.createElement('ol');
 // Iterate through the CSV array and make AJAX requests for each object
 csvArray.forEach(obj => {
 	//console.log(obj.NUMBER);
-	conLI = document.createElement("li");
+	var conLI = document.createElement("li");
 	conLI.innerHTML(obj.NUMBER);
 	conOL.appendChild(conLI);
 	
