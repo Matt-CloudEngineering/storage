@@ -19,7 +19,7 @@ function primaryAnchors(find) {
 	    // console.log(anchor.innerHTML);
 	    if (anchor.innerHTML == find) {
 		console.log("Anchor Found");
-		anchor.setAttribute("href","https://sqhinc.us.evostore.io/paint-at-quality-hardware");
+		anchor.setAttribute("href","https://saratogaqualityhardware.com/paint-at-quality-hardware");
 	    }
 	}
 	console.log("Called PA");
@@ -27,7 +27,7 @@ function primaryAnchors(find) {
 
 function hideVideoAP() {
 	//console.log(window.location);
-	if(window.location.href != "https://sqhinc.us.evostore.io/") return;
+	if(window.location.href != "https://saratogaqualityhardware.com/") return;
 	video = document.getElementById("video");
 	video.style.display="none";
 	// Set Cookie to check for masthead visibility
