@@ -92,7 +92,9 @@ console.log(index);
 let page= document.location;
 console.log(page);
 
-if (index>0 && page.href == "https://sqhinc.us.evostore.io/") {
+if (index>0 && page.href == "https://saratogaqualityhardware.com/") {
         console.log("X is greater than 0");
         document.getElementById("video").style.visibility= "hidden"
 }
+
+
